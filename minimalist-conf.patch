@@ -1,9 +1,9 @@
---- minimalist-2.3-1/minimalist.pl~	Fri Aug 16 04:52:04 2002
-+++ minimalist-2.3-1/minimalist.pl	Sat Mar  8 22:59:17 2003
-@@ -29,7 +29,7 @@
- use Fcntl ':flock';	# LOCK_* constants
+--- minimalist-2.3.3-3/minimalist.pl~	2003-07-01 09:59:40.000000000 +0000
++++ minimalist-2.3.3-3/minimalist.pl	2003-07-01 10:01:27.000000000 +0000
+@@ -30,7 +30,7 @@
+ use integer;
  
- $version = '2.3(1) (Tibetia)';
+ $version = '2.3(3.3) (Fate.eva)';
 -$config = "/usr/local/etc/minimalist.conf";
 +$config = "/etc/minimalist.conf";
  
