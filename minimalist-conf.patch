@@ -1,11 +1,12 @@
---- minimalist-2.4/minimalist.pl.orig	2003-07-11 14:54:28.000000000 +0000
-+++ minimalist-2.4/minimalist.pl	2003-07-14 20:33:42.000000000 +0000
+diff -urN a/minimalist.pl b/minimalist.pl
+--- a/minimalist.pl	2004-07-15 17:44:49.000000000 +0200
++++ b/minimalist.pl	2005-02-17 23:36:55.408771936 +0100
 @@ -30,7 +30,7 @@
  use integer;
  
- $version = '2.4 (Fate.Eva)';
+ $version = '2.5(2.3) (Chernigov White)';
 -$config = "/usr/local/etc/minimalist.conf";
 +$config = "/etc/minimalist.conf";
  
- # Lists' status bits
- $OPEN = 0;
+ # Program name and arguments for launching if commands in message's body
+ $running = $0." --body-controlled ".join ($", @ARGV);
