@@ -4,7 +4,7 @@ Summary(pl):	Minimalistyczny zarz±dca list dyskusyjnych
 Name:		minimalist
 Version:	2.4
 Release:	1
-License:	GPL
+License:	BSD
 Group:		Applications/Mail
 Vendor:		Vladimir Litovka <doka@kiev.sovam.com>
 Source0:	http://www.mml.org.ua/LIST/%{name}-%{version}.tgz
