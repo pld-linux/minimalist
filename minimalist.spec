@@ -2,13 +2,13 @@
 Summary:	Minimalistic Mailing Lists Manager
 Summary(pl):	Minimalistyczny zarz±dca list dyskusyjnych
 Name:		minimalist
-Version:	2.4
+Version:	2.5.2.3
 Release:	1
 License:	BSD
 Group:		Applications/Mail
 Vendor:		Vladimir Litovka <doka@kiev.sovam.com>
 Source0:	http://www.mml.org.ua/LIST/%{name}-%{version}.tgz
-# Source0-md5:	706973265e420499d23b65979636af41
+# Source0-md5:	70cc78617d4b976e4097988686da5027
 Source1:	%{name}.conf
 Patch0:		%{name}-conf.patch
 URL:		http://www.mml.org.ua/
