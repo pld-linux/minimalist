@@ -38,10 +38,10 @@ znaj±c Perla, mo¿na go rozszerzaæ wedle swoich potrzeb.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_var}/{log,spool/minimalist/sample}}
-install -D minimalist.pl $RPM_BUILD_ROOT/%{_bindir}/minimalist.pl
-install -D sample/lists.lst	$RPM_BUILD_ROOT/%{_var}/spool/minimalist/lists.lst
+
+install -D minimalist.pl $RPM_BUILD_ROOT%{_bindir}/minimalist.pl
+install -D sample/lists.lst	$RPM_BUILD_ROOT%{_var}/spool/minimalist/lists.lst
 install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/minimalist.conf
 touch 	$RPM_BUILD_ROOT/var/log/Minimalist.log
 
