@@ -24,12 +24,12 @@ clean internal structure and if you are familiar with Perl, you can
 add as many additional features, as you need.
 
 %description -l pl
-Minimalist to skrót od Minimalistyczny Zarz±dca List Dyskusyjnych (ang. 
-Minimalistic Mailing Lists Manager). Jednak wbrew swojej nazwie jest to
-program o wielu mo¿liwo¶ciach, jak inne programy tego typu (np. Majordomo).
-W odró¿nieniu od nich jest ma³y, szybki, ³atwy w konfiguracji i utrzymaniu.
-Posiada tak¿e przejrzyst± strukturê, i je¶li znasz Perla, mo¿esz go rozszerzaæ
-wedle swoich potrzeb.
+Minimalist to skrót od Minimalistyczny Zarz±dca List Dyskusyjnych
+(ang. Minimalistic Mailing Lists Manager). Jednak wbrew swojej nazwie
+jest to program o wielu mo¿liwo¶ciach, jak inne programy tego typu
+(np. Majordomo). W odró¿nieniu od nich jest ma³y, szybki, ³atwy w
+konfiguracji i utrzymaniu. Posiada tak¿e przejrzyst± strukturê, i
+je¶li znasz Perla, mo¿esz go rozszerzaæ wedle swoich potrzeb.
 
 %prep
 %setup -q -n %{name}-%{version}-1
