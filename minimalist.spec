@@ -28,8 +28,8 @@ Minimalist to skrót od Minimalistyczny Zarz±dca List Dyskusyjnych
 (ang. Minimalistic Mailing Lists Manager). Jednak wbrew swojej nazwie
 jest to program o wielu mo¿liwo¶ciach, jak inne programy tego typu
 (np. Majordomo). W odró¿nieniu od nich jest ma³y, szybki, ³atwy w
-konfiguracji i utrzymaniu. Posiada tak¿e przejrzyst± strukturê, i
-je¶li znasz Perla, mo¿esz go rozszerzaæ wedle swoich potrzeb.
+konfiguracji i utrzymaniu. Posiada tak¿e przejrzyst± strukturê, a
+znaj±c Perla, mo¿na go rozszerzaæ wedle swoich potrzeb.
 
 %prep
 %setup -q -n %{name}-%{version}-1
