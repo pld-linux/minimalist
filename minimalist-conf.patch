@@ -1,0 +1,11 @@
+--- minimalist-2.3-1/minimalist.pl~	Fri Aug 16 04:52:04 2002
++++ minimalist-2.3-1/minimalist.pl	Sat Mar  8 22:59:17 2003
+@@ -29,7 +29,7 @@
+ use Fcntl ':flock';	# LOCK_* constants
+ 
+ $version = '2.3(1) (Tibetia)';
+-$config = "/usr/local/etc/minimalist.conf";
++$config = "/etc/minimalist.conf";
+ 
+ # Lists' status bits
+ $OPEN = 0;
