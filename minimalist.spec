@@ -8,6 +8,7 @@ License:	GPL
 Group:		Applications/Mail
 Vendor:		Vladimir Litovka <doka@kiev.sovam.com>
 Source0:	http://www.mml.org.ua/%{name}.tar.gz
+# Source0-md5:	b7aa72fb06a456c997ac55f07c543f86
 Source1:	%{name}.conf
 Patch0:		%{name}-conf.patch
 URL:		http://www.mml.org.ua/
