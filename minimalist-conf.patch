@@ -1,9 +1,9 @@
---- minimalist-2.3.3-3/minimalist.pl~	2003-07-01 09:59:40.000000000 +0000
-+++ minimalist-2.3.3-3/minimalist.pl	2003-07-01 10:01:27.000000000 +0000
+--- minimalist-2.4/minimalist.pl.orig	2003-07-11 14:54:28.000000000 +0000
++++ minimalist-2.4/minimalist.pl	2003-07-14 20:33:42.000000000 +0000
 @@ -30,7 +30,7 @@
  use integer;
  
- $version = '2.3(3.3) (Fate.eva)';
+ $version = '2.4 (Fate.Eva)';
 -$config = "/usr/local/etc/minimalist.conf";
 +$config = "/etc/minimalist.conf";
  
