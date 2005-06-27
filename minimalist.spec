@@ -2,13 +2,13 @@
 Summary:	Minimalistic Mailing Lists Manager
 Summary(pl):	Minimalistyczny zarz±dca list dyskusyjnych
 Name:		minimalist
-Version:	2.5.2.3
+Version:	2.5.3
 Release:	1
 License:	BSD
 Group:		Applications/Mail
 Vendor:		Vladimir Litovka <doka@kiev.sovam.com>
-Source0:	http://www.mml.org.ua/LIST/%{name}-%{version}.tgz
-# Source0-md5:	70cc78617d4b976e4097988686da5027
+Source0:	http://www.mml.org.ua/LIST/%{name}-%{version}.tar.gz
+# Source0-md5:	69109fccbc3cca278f6d2a2ce630ee91
 Source1:	%{name}.conf
 Patch0:		%{name}-conf.patch
 URL:		http://www.mml.org.ua/
@@ -38,11 +38,11 @@ znaj±c Perla, mo¿na go rozszerzaæ wedle swoich potrzeb.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_var}/{log,spool/minimalist/sample}}
-
+install -d $RPM_BUILD_ROOT{%{_sysconfdir}/mail/minimalist,%{_var}/{log,spool/minimalist/sample}}
 install -D minimalist.pl $RPM_BUILD_ROOT%{_bindir}/minimalist.pl
-install -D sample/lists.lst	$RPM_BUILD_ROOT%{_var}/spool/minimalist/lists.lst
-install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/minimalist.conf
+install -D sample/lists.lst $RPM_BUILD_ROOT%{_var}/spool/minimalist/lists.lst
+install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/mail/minimalist/minimalist.conf
+ln -s	%{_var}/spool/minimalist $RPM_BUILD_ROOT%{_sysconfdir}/mail/minimalist/lists
 touch 	$RPM_BUILD_ROOT/var/log/Minimalist.log
 
 %clean
@@ -52,7 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc minimalist.conf-sample docs sample
 %attr(755,root,root) %{_bindir}/*
+%attr(755,mail,mail) %dir %{_sysconfdir}/mail/minimalist
+%attr(640,root,mail) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/mail/minimalist/minimalist.conf
 %attr(771,mail,mail) %dir %{_var}/spool/minimalist
-%attr(640,root,mail) %{_var}/spool/minimalist/lists.lst
-%attr(640,root,mail) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/minimalist.conf
+%attr(640,root,mail) %config(noreplace) %verify(not size mtime md5) %{_var}/spool/minimalist/lists.lst
 %attr(660,mail,mail) %ghost /var/log/Minimalist.log
+%{_sysconfdir}/mail/minimalist/lists
