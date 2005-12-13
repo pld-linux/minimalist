@@ -53,8 +53,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc minimalist.conf-sample docs sample
 %attr(755,root,root) %{_bindir}/*
 %attr(755,mail,mail) %dir %{_sysconfdir}/mail/minimalist
-%attr(640,root,mail) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/mail/minimalist/minimalist.conf
+%attr(640,root,mail) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/mail/minimalist/minimalist.conf
 %attr(771,mail,mail) %dir %{_var}/spool/minimalist
-%attr(640,root,mail) %config(noreplace) %verify(not size mtime md5) %{_var}/spool/minimalist/lists.lst
+%attr(640,root,mail) %config(noreplace) %verify(not md5 mtime size) %{_var}/spool/minimalist/lists.lst
 %attr(660,mail,mail) %ghost /var/log/Minimalist.log
 %{_sysconfdir}/mail/minimalist/lists
