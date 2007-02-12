@@ -1,6 +1,6 @@
 %include        /usr/lib/rpm/macros.perl
 Summary:	Minimalistic Mailing Lists Manager
-Summary(pl):	Minimalistyczny zarz±dca list dyskusyjnych
+Summary(pl.UTF-8):   Minimalistyczny zarzÄ…dca list dyskusyjnych
 Name:		minimalist
 Version:	2.5.3
 Release:	1
@@ -24,13 +24,13 @@ very small, fast, simple for setup and maintenance. Also it has very
 clean internal structure and if you are familiar with Perl, you can
 add as many additional features, as you need.
 
-%description -l pl
-Minimalist to skrót od Minimalistyczny Zarz±dca List Dyskusyjnych
+%description -l pl.UTF-8
+Minimalist to skrÃ³t od Minimalistyczny ZarzÄ…dca List Dyskusyjnych
 (ang. Minimalistic Mailing Lists Manager). Jednak wbrew swojej nazwie
-jest to program o wielu mo¿liwo¶ciach, jak inne programy tego typu
-(np. Majordomo). W odró¿nieniu od nich jest ma³y, szybki, ³atwy w
-konfiguracji i utrzymaniu. Posiada tak¿e przejrzyst± strukturê, a
-znaj±c Perla, mo¿na go rozszerzaæ wedle swoich potrzeb.
+jest to program o wielu moÅ¼liwoÅ›ciach, jak inne programy tego typu
+(np. Majordomo). W odrÃ³Å¼nieniu od nich jest maÅ‚y, szybki, Å‚atwy w
+konfiguracji i utrzymaniu. Posiada takÅ¼e przejrzystÄ… strukturÄ™, a
+znajÄ…c Perla, moÅ¼na go rozszerzaÄ‡ wedle swoich potrzeb.
 
 %prep
 %setup -q
