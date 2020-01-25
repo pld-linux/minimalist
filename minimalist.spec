@@ -1,4 +1,3 @@
-%include        /usr/lib/rpm/macros.perl
 Summary:	Minimalistic Mailing Lists Manager
 Summary(pl.UTF-8):	Minimalistyczny zarządca list dyskusyjnych
 Name:		minimalist
